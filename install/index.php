@@ -9,6 +9,8 @@
 	$helper = new ServicoHelper();
 	
 	$helper->generateServiceTable();
+	$helper->createUserWithProfile(1,ServicoHelper::ADMINISTRADOR);
+	
 	
 	echo "<h2>Aplicação instalada com sucesso.</h2>";
 	echo "<p>Não esqueça de apagar este diretório.</p>";
