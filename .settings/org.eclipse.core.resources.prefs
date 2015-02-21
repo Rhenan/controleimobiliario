@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//app/controllers/GerenciaController.php=UTF-8
+encoding//app/controllers/InquilinoController.php=UTF-8
+encoding//app/core/AccessController.php=UTF-8
+encoding//app/helper/EnumHelper.php=UTF-8
+encoding//app/helper/ServicoHelper.php=UTF-8
+encoding//app/views/Imovel_Associar_Proprietario.php=UTF-8
+encoding//app/views/Imovel_Detail.php=UTF-8
+encoding//app/views/ServicoManutencao_Detail.php=UTF-8
+encoding//app/views/ServicoManutencao_Inquilino.php=UTF-8
+encoding//app/views/ServicoManutencao_Inquilino_Detail.php=UTF-8
+encoding//app/views/ServicoManutencao_List.php=UTF-8
+encoding//app/views/ServicoManutencao_Novo.php=UTF-8
+encoding//app/views/TipoManutencao_Detail.php=UTF-8
+encoding//app/views/TipoManutencao_Edit.php=UTF-8
+encoding//app/views/TipoManutencao_List.php=UTF-8

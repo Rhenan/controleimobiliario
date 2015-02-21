@@ -1,0 +1,216 @@
+body{
+	background: url('images/bg.jpg') #00a859 center repeat-y;
+	font-family: Arial;
+	font-size: 14px;
+	width: 95%;
+	width: auto;
+}
+
+a, a:visited, a:hover{
+	color:blue;
+}
+
+
+.layout_all{
+	background: white;
+	width: 953px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#header{
+	margin-left: 2px;
+	background: #FFF;
+	width: 950px;
+	height: 100px;
+	margin-bottom: 5px;
+}	
+
+#head_title{
+	font-size: 28px;	
+	padding-left: 40px;
+	padding-top: 40px;
+}
+
+#content{
+	margin-left: 2px;
+	margin-right: 2px;
+	width: 100%;
+	height: auto;
+	width: auto;
+	background: white;
+	display: block;
+}
+
+#left {
+	width: 166px;
+	height: 300px;
+	min-height: 300px;
+	height: auto;
+	float: left;
+	border: 1px solid #2E8B57;
+	padding: 3px;
+}
+
+.menu_div .title{
+	background: #2E8B57;
+	color: white;
+	font-weight: bolder;
+	font-size: 16px;
+	border-bottom: 3px solid #FFF;
+	border-top: 3px solid #FFF;
+	padding: 7px;
+	display: block;
+
+}
+.menu_div a {
+	background: #C1FFC1;
+	color: #666;
+	font-weight: bold;
+	font-size: 13px;
+	text-decoration: none;
+	border-bottom: 2px solid #FFF;
+	padding: 3px;
+	padding-left: 20px;
+	display: block;
+}
+
+.menu_div h3{
+	background: #FFF;
+	color: green;
+	font-weight: bold;
+	font-size: 13px;
+	border-bottom: 2px solid #FFF;
+	padding: 3px;
+	padding-left: 20px;
+	margin: 0 auto;	
+	display: block;
+}
+
+.menu_div a:hover {
+	background: #9BCD9B;
+	color: #FFF;
+}
+
+#right {
+	display: block;
+	min-width: 728px;
+	width: 728px;
+	max-width: 728px;
+	float: left;
+	min-height: 480px;
+	height: 480px;
+	height: auto;
+	margin-left:5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #2E8B57;
+}
+
+.pesquisa {
+	border-radius: 10px;
+	width:50%;
+	border: 1px solid #2E8B57;
+	margin: 5px;
+}
+
+.pesquisa legend{
+	color: #2E8B57;
+	font-size: 16px;
+}
+
+#footer{
+	width: 950px;
+	padding-top: 10px;
+	margin-left: 2px;
+	clear: both;
+}
+
+#footer_inner{
+	height: 30px;
+	border-top: 3px solid #2E8B57;
+	min-height: 30px;
+	font-size: 11px;
+	font-family: Arial;
+	text-align: center;
+	background: #C1FFC1;
+	color: #333;
+	padding-top: 10px;
+}
+
+#selectedList{
+	background: white;
+	color: black;
+	resize: none;
+}
+
+
+h1 {
+	font-size: 30px;
+	color: #2E8B57;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+fieldset {
+	padding: 10px;
+	padding-left: 15px;
+	margin: 5px;
+	border: 1px solid #2E8B57;
+	border-radius: 4px;
+}
+
+fieldset legend {
+	color: #2E8B57;
+	font-size: 18px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.tbl{
+	margin: 30px;
+	border-collapse: collapse;
+}
+
+.tbl th{
+	color: #fff;
+	background: #00bb00;
+	border: 1px solid #00bb00;
+	padding-bottom: 3px;
+	padding-top:1px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.tbl td{
+	border: 1px solid #00bb00;
+	padding: 4px;
+	padding-right: 10px;
+	font-size: 13px;
+}
+
+.tbl tr:hover{
+	background: #dfd;
+}
+
+.tbl a, a:hover, a:visited{
+	text-decoration: none;
+}
+
+.tbl .selected{
+	background: #afa;
+}
+
+#textarea-table{
+	margin: 10px 5px;
+}
+
+#textarea-table textarea{
+	width: 320px;
+	height: 80px;
+	resize: none;
+}
