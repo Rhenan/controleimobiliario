@@ -168,57 +168,54 @@ class ServicoHelper {
 		return TRUE;
 	}
 	
-	public function createUserWithProfile($userId, $profile, $nomeTabela)
+	public function createUserWithProfile($userId, $profile, $nomeTabela="usuario_servico")
 	{
 	
-		echo "delete from $nomeTabela where id_usuario=$userId;<br/><br/>";
+		DaoEntity::doQuery("delete from $nomeTabela where id_usuario=$userId;<br/><br/>");
 		
 		if($profile==ServicoHelper::ADMINISTRADOR)
 		{
 			foreach($this->_ACOES as $idServico=>$value)
 			{
-				echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,".($idServico+1).");";
-				echo "<br/>";
+				DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,".($idServico+1).");");
 			}
 			
 		}
 		else if($profile==ServicoHelper::PROPRIETARIO)
 		{
 			for($i=60;$i<=66;$i++)
-				echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,".($i+1).");<br/>";
+				DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,".($i+1).");<br/>");
 				
-			echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,121);<br/>";
-			echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,124);<br/>";
+			DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,121);<br/>");
+			DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,124);<br/>");
 			
 		}
 		
 		else if($profile==ServicoHelper::INQUILINO)
 		{
 			for($i=28;$i<=35;$i++)
-				echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,".($i+1).");<br/>";
+				DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,".($i+1).");<br/>");
 			
-			echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,121);<br/>";
-			echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,123);<br/>";
+			DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,121);<br/>");
+			DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,123);<br/>");
 			
 		}
 		else if($profile==ServicoHelper::GERENTE)
 		{
 			for($i=0;$i<=17;$i++)
-				echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,".($i+1).");<br/>";
+				DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,".($i+1).");<br/>");
 			for($i=44;$i<=48;$i++)
-				echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,".($i+1).");<br/>";
+				DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,".($i+1).");<br/>");
 			
-			echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,121);<br/>";
-			echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,122);<br/>";
+			DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,121);<br/>");
+			DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,122);<br/>");
 			
 		}
+	
+		DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,91);<br/>");
+		DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,92);<br/>");
+		DaoEntity::doQuery("insert into $nomeTabela (id_usuario,id_servico) values ($userId,94);<br/>");
 		
-		if($profile!=ServicoHelper::ADMINISTRADOR)
-		{
-			echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,91);<br/>";
-			echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,92);<br/>";
-			echo "insert into $nomeTabela (id_usuario,id_servico) values ($userId,94);<br/>";
-		}
 	}
 	
 	public static function associarServicos($usuario)
